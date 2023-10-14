@@ -1,13 +1,12 @@
 const sumAll = function() {
-	const nums = [...arguments];
-	for (const num of nums) {
-		if (num < 0 || typeof num !== "number") {
+	for (const arg of arguments) {
+		if (arg < 0 || typeof arg !== "number") {
 			return "ERROR";
 		}
 	}
 	let sumOfNums = 0;
-	const minNum = Math.min(...nums);
-	const maxNum = Math.max(...nums);
+	const minNum = Math.min(...arguments);
+	const maxNum = Math.max(...arguments);
 	for (let i = minNum; i <= maxNum; i++) {
 		sumOfNums += i;
 	}
