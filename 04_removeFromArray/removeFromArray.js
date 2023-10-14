@@ -13,6 +13,7 @@ const removeFromArray = function() {
 		}
 		newArr.push(arr[i]);
 	}
+	return newArr;
 };
 
 // Do not edit below this line
