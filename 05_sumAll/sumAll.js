@@ -1,10 +1,10 @@
 const sumAll = function() {
 	const nums = [...arguments];
-	nums.forEach((num) => {
-		if (num < 0 || typeof num !== "number") {
+	for (let i = 0; i < nums.length; i++) {
+		if (nums[i] < 0 || typeof nums[i] !== "number") {
 			return "ERROR";
 		}
-	});
+	}
 	let sumOfNums = 0;
 	const minNum = Math.min(...nums);
 	const maxNum = Math.max(...nums);
