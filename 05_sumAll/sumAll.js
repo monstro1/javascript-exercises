@@ -1,6 +1,8 @@
-const sumAll = function(num1, num2) {
+const sumAll = function() {
 	let sumOfNums = 0;
-	for (let i = num1; i <= num2; i++) {
+	let minNum = Math.min(arguments);
+	let maxNum = Math.max(arguments);
+	for (let i = minNum; i <= maxNum; i++) {
 		sumOfNums += i;
 	}
 	return sumOfNums;
