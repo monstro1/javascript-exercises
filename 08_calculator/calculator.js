@@ -23,6 +23,7 @@ const factorial = function(num) {
 	for (let i = 1; i <= num; i++) {
 		computedFactorial *= i;
 	}
+	return computedFactorial;
 };
 
 // Do not edit below this line
