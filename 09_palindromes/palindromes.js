@@ -7,7 +7,7 @@ const palindromes = function (str) {
 				continue loop1;
 			}
 		}
-		newStr += str[i];
+		newStr += str[i].toLowerCase();
 	}
 	let reversedStr = "";
 	for (let i = newStr.length - 1; i >= 0; i--) {
