@@ -1,9 +1,19 @@
 const palindromes = function (str) {
-	let reversedStr = "";
-	for (let i = str.length - 1; i >= 0; i--) {
-		reversedStr += str[i];
+	const punctuation = [",", ".", "?", "!", ":", ";"];
+	let newStr = "";
+	loop1: for (let i = 0; i < str.length; i++) {
+		for (let j = 0; j < punctuation.length; j++) {
+			if (str[i] == punctuation[j]) {
+				continue loop1;
+			}
+		}
+		newStr += str[i];
 	}
-	return str === reversedStr;
+	let reversedStr = "";
+	for (let i = newStr.length - 1; i >= 0; i--) {
+		reversedStr += newStr[i];
+	}
+	return newStr === reversedStr;
 };
 
 // Do not edit below this line
