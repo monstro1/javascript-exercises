@@ -1,5 +1,5 @@
 const palindromes = function (str) {
-	const punctuation = [",", ".", "?", "!", ":", ";"];
+	const punctuation = [",", ".", "?", "!", ":", ";", " "];
 	let newStr = "";
 	loop1: for (let i = 0; i < str.length; i++) {
 		for (let j = 0; j < punctuation.length; j++) {
