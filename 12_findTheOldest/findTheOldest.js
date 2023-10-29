@@ -3,6 +3,7 @@ const findTheOldest = function(arr) {
 		arr[i].age = arr[i].yearOfDeath - arr[i].yearOfBirth;
 	}
 	arr.sort((a, b) => b.age - a.age);
+	return arr[0].name;
 };
 
 // Do not edit below this line
